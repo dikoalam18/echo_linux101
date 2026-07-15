@@ -1,0 +1,7 @@
+#!/bin/bash
+# TODO: Print the following in the console:
+# Hello, My name is Yourname
+# Welcome to Bash Scripting!
+
+# code
+your code here
