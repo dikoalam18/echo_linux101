@@ -13,24 +13,24 @@ do
     if [ "$command" = "add" ]; then
 
         # TO DO: Ask for number
-        read -p "Enter number: " number
+        your code here
 
         # TO DO: Add that number to the total
-        total=$((total + number))
+        your code here
 
         # TO DO: Print the current total
-        echo "Total is $total"
+        your code here
 
     elif [ "$command" = "sub" ]; then
 
         # TO DO: Ask for number
-        read -p "Enter number: " number
+        your code here
 
         # TO DO: Subtract that number from the total
-        total=$((total - number))
+        your code here
 
-        # Print the current total
-        echo "Total is $total"
+        # TO DO: Print the current total
+        your code here
 
     elif [ "$command" = "exit" ]; then
         echo

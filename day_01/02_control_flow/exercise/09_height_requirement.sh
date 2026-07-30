@@ -5,14 +5,13 @@
 minimum_height=138
 
 # TO DO: Ask the user for their height
-read -p "Enter height (in cm): " user_height
+your code here
 
 # TO DO: Determine if the user can enter the ride
-if (( user_height >= minimum_height )); then
-    can_enter_ride=true
-else
-    can_enter_ride=false
-fi
+your code here
+your code here
+your code here
+your code here
 
 # TO DO: Print the result
-echo "Can enter the ride: $can_enter_ride"
+your code here

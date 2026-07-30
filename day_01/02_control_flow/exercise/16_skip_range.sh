@@ -4,10 +4,8 @@
 for ((item=0; item<100; item++))
 do
     # TO DO: Skip numbers 20 to 80
-    if [ "$item" -ge 20 ] && [ "$item" -le 80 ]; then
-        continue
-    fi
+    your code here
 
     # TO DO: Print the current number
-    echo "$item"
+    your code here
 done

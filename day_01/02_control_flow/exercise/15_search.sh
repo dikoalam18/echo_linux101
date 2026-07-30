@@ -6,16 +6,6 @@ items=("rice" "noodles" "toyo" "spam" "coffee")
 item_to_find="spam"
 
 # TO DO: Search for the item in the list
-for item in "${items[@]}"
-do
-
-    # TO DO: Check if the current item matches the item to find
-    if [ "$item" = "$item_to_find" ]; then
-
-        # TO DO: Print the item and exit the loop
-        echo "$item"
-        
-        # TO DO: Exit the loop
-        break
-    fi
-done
+your code here
+your code here
+your code here

@@ -3,7 +3,7 @@
 # then ask for the cost and quantity of each item, and finally print the total number of items and the total amount.
 
 # TODO: Ask the user how many items will be calculated
-read -p "How many item?: " input_count
+your code here
 
 total=0
 packs=0
@@ -13,19 +13,19 @@ for ((x=1; x<=input_count; x++))
 do
 
     # TODO: Ask for the cost and quantity of each item
-    read -p "ITEM$x: How much?: " item_cost
-    read -p "ITEM$x: How many?: " item_packs
+    YOUR CODE HERE
+    YOUR CODE HERE
 
     # TODO: Calculate the total cost and total number of items
-    item_costs=$((item_cost * item_packs))
+    YOUR CODE HERE
 
     #TODO: Add the current item cost and quantity to the total
-    total=$((total + item_costs))
+    YOUR CODE HERE
 
     #TODO: Add the current item quantity to the total number of items
-    packs=$((packs + item_packs))
+    YOUR CODE HERE
 done
 
 # TODO: Print the total number of items and the total amount
-echo "Total item/s: $packs"
-echo "Total Amount: $total"
+YOUR CODE HERE
+YOU
