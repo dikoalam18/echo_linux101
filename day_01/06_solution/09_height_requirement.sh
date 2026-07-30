@@ -1,11 +1,12 @@
 #!/bin/bash
 # TO DO: Check if the user is tall enough to enter the ride
 
-# Height requirement for the ride
 minimum_height=138
 
-# TO DO: Ask the user for their height
+echo
 read -p "Enter height (in cm): " user_height
+
+echo
 
 # TO DO: Determine if the user can enter the ride
 if (( user_height >= minimum_height )); then
