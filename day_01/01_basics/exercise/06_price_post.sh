@@ -1,4 +1,5 @@
 #!/bin/bash
+# TO DO: Print the following in the console:
 
 # Post: Latte (3.5)
 your code here

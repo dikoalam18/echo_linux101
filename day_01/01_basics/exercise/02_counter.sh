@@ -1,4 +1,5 @@
 #!/bin/bash
+# TO DO: Create a counter variable and perform the following operations:
 
 # variable to hold the counter value
 counter=0
