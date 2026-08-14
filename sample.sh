@@ -147,7 +147,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-        <Linknical
+        <Link href="/technical">
           <div className="bg-blue-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
             <h2>Total Records</h2>
 
@@ -157,7 +157,7 @@ export default function DashboardPage() {
           </div>
         </Link>
 
-        /technical
+        <Link href="/technical">
           <div className="bg-red-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
             <h2>Open Issues</h2>
 
@@ -167,7 +167,7 @@ export default function DashboardPage() {
           </div>
         </Link>
 
-        /technical
+        <Link href="/technical">
           <div className="bg-green-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
             <h2>Resolved Issues</h2>
 
