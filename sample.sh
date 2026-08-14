@@ -78,8 +78,10 @@ export default function DashboardPage() {
           (acc[r.category] || 0) + 1;
         return acc;
       }, {})
-    ).sort((a: any, b: any) => Number(b[1]) - Number(a[1]))[0]?.[0] ||
-    "N/A";
+    ).sort(
+      (a: any, b: any) =>
+        Number(b[1]) - Number(a[1])
+    )[0]?.[0] || "N/A";
 
   const pieData = [
     {
@@ -145,6 +147,60 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        <Linknical
+          <div className="bg-blue-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
+            <h2>Total Records</h2>
+
+            <p className="text-4xl font-bold">
+              {totalRecords}
+            </p>
+          </div>
+        </Link>
+
+        /technical
+          <div className="bg-red-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
+            <h2>Open Issues</h2>
+
+            <p className="text-4xl font-bold">
+              {openIssues}
+            </p>
+          </div>
+        </Link>
+
+        /technical
+          <div className="bg-green-600 text-white rounded-lg p-6 shadow cursor-pointer hover:scale-105 transition">
+            <h2>Resolved Issues</h2>
+
+            <p className="text-4xl font-bold">
+              {resolvedIssues}
+            </p>
+          </div>
+        </Link>
+
+        <div className="bg-purple-600 text-white rounded-lg p-6 shadow">
+          <h2>Activities Today</h2>
+
+          <p className="text-4xl font-bold">
+            {activitiesToday}
+          </p>
+        </div>
+
+        <div className="bg-amber-600 text-white rounded-lg p-6 shadow">
+          <h2>Avg Duration</h2>
+
+          <p className="text-4xl font-bold">
+            {avgDuration}
+          </p>
+        </div>
+
+        <div className="bg-cyan-600 text-white rounded-lg p-6 shadow">
+          <h2>Top Category</h2>
+
+          <p className="text-lg font-bold break-words">
+            {topCategory}
+          </p>
+        </div>
+      </div>
 
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
         <div className="bg-white rounded-lg shadow border p-4">
@@ -183,13 +239,9 @@ export default function DashboardPage() {
           >
             <BarChart data={dailyData}>
               <CartesianGrid strokeDasharray="3 3" />
-
               <XAxis dataKey="date" />
-
               <YAxis />
-
               <Tooltip />
-
               <Bar
                 dataKey="count"
                 fill="#2563eb"
